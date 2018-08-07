@@ -106,7 +106,7 @@ void loop()
 
     delay(800);
 
-    Serial.print("\nSending Pressure val");
+    Serial.print("\nSending Humidity val");
     Serial.print((bme280.humidity));
     Serial.println("....");
     if(feed2.publish(bme280.humidity))
