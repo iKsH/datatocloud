@@ -1,35 +1,16 @@
-/*
- * To operate the BME280 sensor, we need 4 basic APIs begin, setSensorConfig, setPowerMode, readSensorData. 
- * 
- * The sensor supports different power modes and sampling settings which can be configured based on the user need 
- * by using the following values given in the table,
- *-------------------------------------------------------------------------------------------------------------------
- *        power modes       |   Oversampling settings   |    Standby duration settings  |     Filter settings       |
- *--------------------------|---------------------------|-------------------------------|-------------------------- |
- *      BME280_SLEEP_MODE   | BME280_OVERSAMP_SKIPPED   |  BME280_STANDBY_TIME_1_MS     |  BME280_FILTER_COEFF_OFF  |
- *      BME280_FORCED_MODE  | BME280_OVERSAMP_1X        |  BME280_STANDBY_TIME_63_MS    |  BME280_FILTER_COEFF_2    |
- *      BME280_NORMAL_MODE  | BME280_OVERSAMP_2X        |  BME280_STANDBY_TIME_125_MS   |  BME280_FILTER_COEFF_4    |
- *                          | BME280_OVERSAMP_4X        |  BME280_STANDBY_TIME_250_MS   |  BME280_FILTER_COEFF_8    |
- *                          | BME280_OVERSAMP_8X        |  BME280_STANDBY_TIME_500_MS   |  BME280_FILTER_COEFF_16   |
- *                          | BME280_OVERSAMP_16X       |  BME280_STANDBY_TIME_1000_MS  |                           |
- *                          |                           |  BME280_STANDBY_TIME_10_MS    |                           |
- *                          |                           |  BME280_STANDBY_TIME_20_MS    |                           |
- *-------------------------------------------------------------------------------------------------------------------
- *
- */
 #include <BME280_wr.h>
 
 #include <ESP8266WiFi.h>
 #include <Adafruit_MQTT_Client.h>
 
-#define wifi "8055"
-#define password "ikram32156"
+#define wifi "80SS"
+#define password "ikram111111"
 
 #define server "io.adafruit.com"
 
 #define port 1883
 #define username "ikram"
-#define key "ac375c34de3e413199b73a8a9af46ee3"
+#define key "ac115c11de114111199b73a8a9af46ee3"
 
 WiFiClient esp;
 
